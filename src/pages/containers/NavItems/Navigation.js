@@ -1,0 +1,66 @@
+import React, {Component} from 'react';
+import {NavLink, Route, Routes, Outlet} from "react-router-dom";
+
+import '../../../styles/Footer.css';
+import './Navigation.css';
+import { Home } from '../../components/Home/Home';
+import { Support } from '../../components/Support/Support';
+import { Funktion } from '../../components/Funktion/Funktion';
+import { Video } from '../../components/Video/Video';
+import { About } from '../../components/About/About';
+import { Impressum } from '../../components/Impressum/Impressum';
+import logo from '../../../img/logo.jpg';
+
+class Navigation extends Component {
+    render() {
+        const navStyle = {
+            color: '#fa923f',
+            textDecoration: 'none',
+            opacity: 0.4,
+        }
+        return (
+            <div>
+                <div className="Blog">
+                    <header>
+                        <div className="BackgroundPic"/>
+                        <nav>
+                            <ul>
+                                <li><NavLink end to="/"
+                                    activestyle={navStyle}>Home</NavLink></li>
+                                <li><NavLink
+                                    to="/funktion"
+                                    activestyle={navStyle}>Funktion</NavLink></li>
+                                <li><NavLink
+                                    to="/video"
+                                    activestyle={navStyle}>Video</NavLink></li>
+                                <li><NavLink
+                                    to="/support"
+                                    activestyle={navStyle}>Support</NavLink></li>
+                                <li><NavLink 
+                                    to="/about"
+                                    activestyle={navStyle}>About</NavLink></li>
+                                <li><NavLink 
+                                    to="/impressum"
+                                    activestyle={navStyle}>Impressum</NavLink></li>
+                            </ul>
+                        </nav>
+                    </header>
+                </div>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                    <Route path="/funktion" element={<Funktion/>}/>
+                    <Route path="/video" element={<Video/>}/>
+                    <Route path="/support" element={<Support/>}/>
+                    <Route path="/about" element={<About/>}/>
+                    <Route path="/impressum" element={<Impressum/>}/>
+                </Routes>
+                <Outlet/>
+                <div className="Footer">
+                    <img className="logoStyle" src={logo} alt={"logo"}/>
+                </div>
+            </div>
+        );
+    }
+}
+
+export default Navigation;
