@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/K100/static/css/main.ca15336c.css",
+    "main.js": "/K100/static/js/main.e09d4f9c.js",
+    "static/js/787.11df0c0d.chunk.js": "/K100/static/js/787.11df0c0d.chunk.js",
+    "static/media/m152_video_noel_schaerer.mp4": "/K100/static/media/m152_video_noel_schaerer.76c1172426ca60fc56a8.mp4",
+    "static/media/titlepicture.jpg": "/K100/static/media/titlepicture.03a6929a864e06c329af.jpg",
+    "static/media/k100buy.jpg": "/K100/static/media/k100buy.468c3f1b16311641f30d.jpg",
+    "static/media/corsair1.jpg": "/K100/static/media/corsair1.445b3d75bb33e883f722.jpg",
+    "static/media/logo.jpg": "/K100/static/media/logo.2d309e335c267d679d88.jpg",
+    "static/media/corsair2.jpg": "/K100/static/media/corsair2.da388be1f3602e2ac9b5.jpg",
+    "index.html": "/K100/index.html",
+    "main.ca15336c.css.map": "/K100/static/css/main.ca15336c.css.map",
+    "main.e09d4f9c.js.map": "/K100/static/js/main.e09d4f9c.js.map",
+    "787.11df0c0d.chunk.js.map": "/K100/static/js/787.11df0c0d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca15336c.css",
+    "static/js/main.e09d4f9c.js"
+  ]
+}
